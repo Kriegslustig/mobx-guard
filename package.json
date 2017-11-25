@@ -1,0 +1,23 @@
+{
+  "name": "mobx-guard",
+  "version": "1.0.0",
+  "description": "Prevent untracked MobX usage",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kriegslustig/mobx-guard.git"
+  },
+  "keywords": [
+    "MobX",
+    "save"
+  ],
+  "author": "Luca Nils Schmid <npm@ls7.ch>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kriegslustig/mobx-guard/issues"
+  },
+  "homepage": "https://github.com/Kriegslustig/mobx-guard#readme"
+}

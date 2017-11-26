@@ -24,6 +24,9 @@
     "url": "https://github.com/Kriegslustig/mobx-guard/issues"
   },
   "homepage": "https://github.com/Kriegslustig/mobx-guard#readme",
+  "peerDependencies": {
+    "mobx": "^3.3.2"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
@@ -31,6 +34,7 @@
     "flow-bin": "^0.59.0",
     "flow-typed": "^2.2.3",
     "jest": "^21.2.1",
+    "mobx": "^3.3.2",
     "rollup": "0.52.0"
   }
 }

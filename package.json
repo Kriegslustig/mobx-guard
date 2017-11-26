@@ -2,7 +2,7 @@
   "name": "mobx-guard",
   "version": "1.0.0",
   "description": "Prevent untracked MobX usage",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "flow": "flow",
     "flow-typed": "flow-typed",

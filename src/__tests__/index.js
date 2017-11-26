@@ -1,3 +1,5 @@
+// @flow
+
 const { restore } = require('../')
 const mobx = require('mobx')
 

@@ -18,3 +18,5 @@ expect(() => {
   })
 }).not.toThrow()
 ```
+
+Props to [Max Combüchen](https://github.com/mcombuechen) for the idea!

@@ -16,7 +16,8 @@
   },
   "keywords": [
     "MobX",
-    "save"
+    "save",
+    "tests"
   ],
   "author": "Luca Nils Schmid <npm@ls7.ch>",
   "license": "MIT",
@@ -34,7 +35,6 @@
     "flow-bin": "^0.59.0",
     "flow-typed": "^2.2.3",
     "jest": "^21.2.1",
-    "mobx": "^3.3.2",
-    "rollup": "0.52.0"
+    "mobx": "^3.3.2"
   }
 }

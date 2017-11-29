@@ -2,7 +2,7 @@
 
 const mobx = require('mobx')
 
-let isExplicitUntract = false
+let isExplicitlyUntracked = false
 
 const untracked = mobx.untracked
 const reportObserved = mobx.BaseAtom.prototype.reportObserved
@@ -12,10 +12,9 @@ const guardedReportObserved = function () {
     this.name !== 'reactive props' &&
     this.name !== 'reactive state' &&
     mobx.extras.getGlobalState().inBatch === 0 &&
-    !isExplicitUntract &&
+    !isExplicitlyUntracked &&
     !mobx.extras.isComputingDerivation()
   ) {
-    //console.log(this)
     throw new Error('Untracked access to atom')
   }
 
@@ -23,9 +22,9 @@ const guardedReportObserved = function () {
 }
 
 const guardedUntracked = <T>(fn: () => T): T => {
-  isExplicitUntract = true
+  isExplicitlyUntracked = true
   const returnValue = untracked(fn)
-  isExplicitUntract = false
+  isExplicitlyUntracked = false
   return returnValue
 }
 

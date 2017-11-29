@@ -1,7 +1,7 @@
 // @flow
 
-const { setup, restore, runGuarded, guard } = require('../')
 const mobx = require('mobx')
+const { setup, restore, runGuarded, guard } = require('../')
 
 describe('BaseAtom.reportObserved', () => {
   it('should throw if a derivation is untracked', () => {

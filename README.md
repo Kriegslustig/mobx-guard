@@ -4,10 +4,12 @@
 
 Disallow untracked observations in MobX.
 
-```
+```javascript
+import * as mobx from 'mobx'
 import { guard, untracked } from 'mobx-guard'
 
 const something = mobx.observable({ x: true })
+
 expect(() => {
   something.x
 }).toThrow()
@@ -18,5 +20,3 @@ expect(() => {
   })
 }).not.toThrow()
 ```
-
-Props to [Max Combüchen](https://github.com/mcombuechen) for the idea!
